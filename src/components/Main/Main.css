@@ -1,0 +1,22 @@
+main {
+  min-height: 100vh;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+
+@media (max-width: 991px) {
+  main {
+    margin-left: 0px;
+  }
+}
+
+main .gat_size {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FF5A1F;
+}
+.bg_prime {
+  background-color: #14f1d9!important;
+}
+/*# sourceMappingURL=Main.css.map */

@@ -1,0 +1,46 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 1000;
+}
+
+@media (max-width: 991px) {
+  header menu {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    top: 75px;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  header menu.stop_translate {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 300px;
+  width: calc(100% - 300px);
+  z-index: 1000;
+}
+
+@media (max-width: 991px) {
+  header nav {
+    width: 100%;
+    left: 0px;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

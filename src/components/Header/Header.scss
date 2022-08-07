@@ -1,0 +1,35 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    z-index: 1000;
+    @media (max-width: 991px) {
+      transform: translateX(-100%);
+      top: 75px;
+      transition: .3s;
+      &.stop_translate{
+        transform: translateX(0px)
+      }
+    }
+    
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 300px;
+    width: calc(100% - 300px);
+    z-index: 1000;
+    @media (max-width: 991px) {
+      width: 100%;
+      left: 0px;
+    }
+  }
+}
